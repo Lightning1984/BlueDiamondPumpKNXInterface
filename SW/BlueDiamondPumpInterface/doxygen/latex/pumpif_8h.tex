@@ -1,0 +1,447 @@
+\hypertarget{pumpif_8h}{\section{pumpif.\-h File Reference}
+\label{pumpif_8h}\index{pumpif.\-h@{pumpif.\-h}}
+}
+
+
+Header File for the Micro\-Blue Pump K\-N\-X Interface controller.  
+
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structavgdata}{avgdata}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{Indent}{\bf P\-I\-N Definitions}\par
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{pumpif_8h_a13559e2b3d8272e76619e58bf0a25e0b}{\#define {\bfseries O\-U\-T\-P\-O\-R\-T}~P\-O\-R\-T\-B}\label{pumpif_8h_a13559e2b3d8272e76619e58bf0a25e0b}
+
+\item 
+\hypertarget{pumpif_8h_a6852950010a1b039347cb86df74cc270}{\#define {\bfseries O\-U\-T1}~P\-B1}\label{pumpif_8h_a6852950010a1b039347cb86df74cc270}
+
+\item 
+\hypertarget{pumpif_8h_a0f6562f6a79336bba7d01d5f2102502f}{\#define {\bfseries O\-U\-T2}~P\-B0}\label{pumpif_8h_a0f6562f6a79336bba7d01d5f2102502f}
+
+\item 
+\hypertarget{pumpif_8h_a93b988914e9a59230d1ace60329816c0}{\#define {\bfseries L\-E\-D\-O\-N}~P\-B2}\label{pumpif_8h_a93b988914e9a59230d1ace60329816c0}
+
+\item 
+\hypertarget{pumpif_8h_a36d8b275c1932cdf4756f31894566156}{\#define {\bfseries A\-N\-A\-L\-O\-G1}~P\-B3}\label{pumpif_8h_a36d8b275c1932cdf4756f31894566156}
+
+\item 
+\hypertarget{pumpif_8h_ac0aadc4bdf9dbd568a0e5b2f842a49ae}{\#define {\bfseries A\-N\-A\-L\-O\-G2}~P\-B4}\label{pumpif_8h_ac0aadc4bdf9dbd568a0e5b2f842a49ae}
+
+\item 
+\hypertarget{pumpif_8h_a5bbe2a6830fe2608fe2dcc7e76ee03e2}{\#define {\bfseries B\-A\-N\-D\-G\-A\-P}~253}\label{pumpif_8h_a5bbe2a6830fe2608fe2dcc7e76ee03e2}
+
+\item 
+\hypertarget{pumpif_8h_ae5ff1f63e632fba61c45cfb0a2b19066}{\#define {\bfseries Q\-U\-E\-R\-Y}~255}\label{pumpif_8h_ae5ff1f63e632fba61c45cfb0a2b19066}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf A\-D\-C Buffer value Definitions}\par
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{pumpif_8h_a6e5c648028310649434b89b5375a5d79}{\#define {\bfseries C\-H\-A\-N1\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-S\-I\-Z\-E}~8}\label{pumpif_8h_a6e5c648028310649434b89b5375a5d79}
+
+\item 
+\hypertarget{pumpif_8h_acd209c8a76791d11a3204a1a46e4182d}{\#define {\bfseries C\-H\-A\-N1\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-M\-A\-S\-K}~(C\-H\-A\-N1\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-S\-I\-Z\-E -\/ 1)}\label{pumpif_8h_acd209c8a76791d11a3204a1a46e4182d}
+
+\item 
+\hypertarget{pumpif_8h_a1024e44d3fef253f889a9fc6faa9899e}{\#define {\bfseries C\-H\-A\-N2\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-S\-I\-Z\-E}~8}\label{pumpif_8h_a1024e44d3fef253f889a9fc6faa9899e}
+
+\item 
+\hypertarget{pumpif_8h_ac699711adfe2c9b2a8827566c648605f}{\#define {\bfseries C\-H\-A\-N2\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-M\-A\-S\-K}~(C\-H\-A\-N2\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-S\-I\-Z\-E -\/ 1)}\label{pumpif_8h_ac699711adfe2c9b2a8827566c648605f}
+
+\item 
+\hypertarget{pumpif_8h_a130a78573f3f044449912e5a564bab60}{\#define {\bfseries B\-U\-F\-F\-E\-R\-\_\-\-F\-A\-I\-L}~0}\label{pumpif_8h_a130a78573f3f044449912e5a564bab60}
+
+\item 
+\hypertarget{pumpif_8h_a6861758eca7b115454b77ded9d29eebd}{\#define {\bfseries B\-U\-F\-F\-E\-R\-\_\-\-S\-U\-C\-C\-E\-S\-S}~1}\label{pumpif_8h_a6861758eca7b115454b77ded9d29eebd}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf A\-D\-C Measurement value Definitions}\par
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{pumpif_8h_a6f6406e0152234af082e19aaa6b21a06}{\#define {\bfseries P\-U\-M\-P\-O\-N\-V\-A\-L}~575}\label{pumpif_8h_a6f6406e0152234af082e19aaa6b21a06}
+
+\item 
+\hypertarget{pumpif_8h_a5d6c574dbd40ae94aac355eea4d55499}{\#define {\bfseries P\-U\-M\-P\-O\-F\-F\-V\-A\-L}~610}\label{pumpif_8h_a5d6c574dbd40ae94aac355eea4d55499}
+
+\item 
+\hypertarget{pumpif_8h_ada44829d03192528a32af5f7d9f7a49e}{\#define {\bfseries P\-U\-M\-P\-P\-W\-R\-D\-O\-W\-N}~200}\label{pumpif_8h_ada44829d03192528a32af5f7d9f7a49e}
+
+\item 
+\hypertarget{pumpif_8h_a9c04f88ce63add4564f79c7614c206e2}{\#define {\bfseries A\-L\-A\-R\-M\-O\-N\-V\-A\-L}~585}\label{pumpif_8h_a9c04f88ce63add4564f79c7614c206e2}
+
+\item 
+\hypertarget{pumpif_8h_a6d1a7081acfad6ec9282d3da62d95a1f}{\#define {\bfseries A\-L\-A\-R\-M\-O\-F\-F\-V\-A\-L}~620}\label{pumpif_8h_a6d1a7081acfad6ec9282d3da62d95a1f}
+
+\item 
+\hypertarget{pumpif_8h_afd9186a8a4d5b89d6c987ae5dca6fb63}{\#define {\bfseries A\-L\-A\-R\-M\-P\-W\-R\-D\-O\-W\-N}~200}\label{pumpif_8h_afd9186a8a4d5b89d6c987ae5dca6fb63}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Status Flag Definitions}\par
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{pumpif_8h_a344919d6fee995ac61ff9df57aeaefa8}{\#define {\bfseries S\-T\-A\-T\-U\-S\-A\-D\-C\-V\-A\-L\-U\-E\-A\-V\-A\-I\-L\-A\-B\-L\-E}~0}\label{pumpif_8h_a344919d6fee995ac61ff9df57aeaefa8}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf State Flag Definitions}\par
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{pumpif_8h_a87373cabf39cbf2819ee02e593ec3ae4}{\#define {\bfseries S\-T\-A\-T\-E\-P\-O\-W\-E\-R\-O\-F\-F}~0}\label{pumpif_8h_a87373cabf39cbf2819ee02e593ec3ae4}
+
+\item 
+\hypertarget{pumpif_8h_a1e3cd341eec11bc23aad4832bc66883a}{\#define {\bfseries S\-T\-A\-T\-E\-T\-R\-A\-I\-N\-I\-N\-G}~1}\label{pumpif_8h_a1e3cd341eec11bc23aad4832bc66883a}
+
+\item 
+\hypertarget{pumpif_8h_a4e0c0bde6f47c21002ccf7db222b6bdd}{\#define {\bfseries S\-T\-A\-T\-E\-I\-D\-L\-E}~2}\label{pumpif_8h_a4e0c0bde6f47c21002ccf7db222b6bdd}
+
+\item 
+\hypertarget{pumpif_8h_a5983df91f4934c973e05d0c1153239ca}{\#define {\bfseries S\-T\-A\-T\-E\-P\-U\-M\-P\-I\-N\-G}~3}\label{pumpif_8h_a5983df91f4934c973e05d0c1153239ca}
+
+\item 
+\hypertarget{pumpif_8h_aba3692d07400f7df8acdc55c42b5a664}{\#define {\bfseries S\-T\-A\-T\-E\-A\-L\-A\-R\-M}~4}\label{pumpif_8h_aba3692d07400f7df8acdc55c42b5a664}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}{\bf Other Defines}\par
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{pumpif_8h_a59b6f1b92c205e8e559a0dd6faee776c}{\#define {\bfseries T\-R\-A\-I\-N\-I\-N\-G\-T\-O\-U\-T}~16000}\label{pumpif_8h_a59b6f1b92c205e8e559a0dd6faee776c}
+
+\item 
+\hypertarget{pumpif_8h_a3c9bbaf860ba05a612db03f499814383}{\#define {\bfseries D\-E\-B\-U\-G\-L\-E\-D}}\label{pumpif_8h_a3c9bbaf860ba05a612db03f499814383}
+
+\end{DoxyCompactItemize}
+\end{Indent}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structavgdata}{avgdata} \hyperlink{pumpif_8h_a218d4480b843c15d4f903e403cc154e7}{avgdata}
+\begin{DoxyCompactList}\small\item\em average Data memory \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint32\-\_\-t \hyperlink{pumpif_8h_adb94fbd930038e1510574dd4bcf07fe1}{millis} ()
+\begin{DoxyCompactList}\small\item\em get milliseconds since system started, will overflow every $\sim$49 Days \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{pumpif_8h_aee74ce1721fbcaa1666b215f7f34c1a4}{Chan1\-Buffer\-In} (uint16\-\_\-t data)
+\begin{DoxyCompactList}\small\item\em Function to write into the overwriting Channel1 ringbuffer. \end{DoxyCompactList}\item 
+uint16\-\_\-t \hyperlink{pumpif_8h_a14554a03cf960b648702459c42741233}{Chan1\-Buffer\-Out} (int8\-\_\-t position)
+\begin{DoxyCompactList}\small\item\em Function to read data from Channel1 ringbuffer. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{pumpif_8h_a9f139767eaac9783adad1cb42c2484aa}{Chan2\-Buffer\-In} (uint16\-\_\-t data)
+\begin{DoxyCompactList}\small\item\em Function to write into the overwriting Channel2 ringbuffer. \end{DoxyCompactList}\item 
+uint16\-\_\-t \hyperlink{pumpif_8h_a7e8cad6b47f77b5e182aac5b1a5ba00f}{Chan2\-Buffer\-Out} (int8\-\_\-t position)
+\begin{DoxyCompactList}\small\item\em Function to read data from Channel2 ringbuffer. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{pumpif_8h_a0adc5599b4eaebf73d67f156970b290a}{Mux\-Channel} (uint8\-\_\-t channel)
+\begin{DoxyCompactList}\small\item\em Function to set or get the current A\-D\-C Mux Settings. \end{DoxyCompactList}\item 
+void \hyperlink{pumpif_8h_a4e580b7a12652532049e4a036cf4c854}{Process\-Data} (\hyperlink{structavgdata}{avgdata} $\ast$p\-\_\-mydata)
+\begin{DoxyCompactList}\small\item\em Function to calculate average values from the Buffer. \end{DoxyCompactList}\item 
+void \hyperlink{pumpif_8h_af4f5d9ec58592e69b5ee3b144ffac3f3}{state\-\_\-pwroff} (uint8\-\_\-t $\ast$stateflags)
+\begin{DoxyCompactList}\small\item\em F\-S\-M state functions for state\-: Poweroff. \end{DoxyCompactList}\item 
+void \hyperlink{pumpif_8h_ae219b21feb33b121c92ada38b30e97e0}{state\-\_\-training} (uint8\-\_\-t $\ast$stateflags)
+\begin{DoxyCompactList}\small\item\em F\-S\-M state functions for state\-: Training. \end{DoxyCompactList}\item 
+void \hyperlink{pumpif_8h_aaabb0e2cd92219396cbac5ca60c00821}{state\-\_\-idle} (uint8\-\_\-t $\ast$stateflags)
+\begin{DoxyCompactList}\small\item\em F\-S\-M state functions for state\-: Idle. \end{DoxyCompactList}\item 
+void \hyperlink{pumpif_8h_a8a9adbbd4f3a62f6afadf99bc37b329f}{state\-\_\-pumping} (uint8\-\_\-t $\ast$stateflags)
+\begin{DoxyCompactList}\small\item\em F\-S\-M state functions for state\-: Pumping. \end{DoxyCompactList}\item 
+void \hyperlink{pumpif_8h_a348586d52f2ae6ba9d2429cf3320d5dc}{state\-\_\-alarm} (uint8\-\_\-t $\ast$stateflags)
+\begin{DoxyCompactList}\small\item\em F\-S\-M state functions for state\-: Alarm. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+void($\ast$ \hyperlink{pumpif_8h_a417ccc71e42cbb10c77fe02634d70438}{statehandler} )(uint8\-\_\-t $\ast$stateflags)
+\begin{DoxyCompactList}\small\item\em Callback function pointer to F\-S\-M state functions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Header File for the Micro\-Blue Pump K\-N\-X Interface controller. Rupert Dobrounig (\href{mailto:rupert.dobrounig@gmail.com}{\tt rupert.\-dobrounig@gmail.\-com}) \begin{DoxyDate}{Date}
+September, 2016 
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{pumpif_8h_a218d4480b843c15d4f903e403cc154e7}{\index{pumpif.\-h@{pumpif.\-h}!avgdata@{avgdata}}
+\index{avgdata@{avgdata}!pumpif.h@{pumpif.\-h}}
+\subsubsection[{avgdata}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf avgdata} {\bf avgdata}}}\label{pumpif_8h_a218d4480b843c15d4f903e403cc154e7}
+
+
+average Data memory 
+
+structure to hold the average values calculated 
+
+\subsection{Function Documentation}
+\hypertarget{pumpif_8h_aee74ce1721fbcaa1666b215f7f34c1a4}{\index{pumpif.\-h@{pumpif.\-h}!Chan1\-Buffer\-In@{Chan1\-Buffer\-In}}
+\index{Chan1\-Buffer\-In@{Chan1\-Buffer\-In}!pumpif.h@{pumpif.\-h}}
+\subsubsection[{Chan1\-Buffer\-In}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t Chan1\-Buffer\-In (
+\begin{DoxyParamCaption}
+\item[{uint16\-\_\-t}]{data}
+\end{DoxyParamCaption}
+)}}\label{pumpif_8h_aee74ce1721fbcaa1666b215f7f34c1a4}
+
+
+Function to write into the overwriting Channel1 ringbuffer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em data} & the new value to store in the ringbuffer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+whether buffer write was successful or not 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em B\-U\-F\-F\-E\-R\-\_\-\-S\-U\-C\-C\-E\-S\-S} & \\
+\hline
+{\em B\-U\-F\-F\-E\-R\-\_\-\-F\-A\-I\-L} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{pumpif_8h_a14554a03cf960b648702459c42741233}{\index{pumpif.\-h@{pumpif.\-h}!Chan1\-Buffer\-Out@{Chan1\-Buffer\-Out}}
+\index{Chan1\-Buffer\-Out@{Chan1\-Buffer\-Out}!pumpif.h@{pumpif.\-h}}
+\subsubsection[{Chan1\-Buffer\-Out}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t Chan1\-Buffer\-Out (
+\begin{DoxyParamCaption}
+\item[{int8\-\_\-t}]{position}
+\end{DoxyParamCaption}
+)}}\label{pumpif_8h_a14554a03cf960b648702459c42741233}
+
+
+Function to read data from Channel1 ringbuffer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & index to return, -\/7 to 0, more negative means older data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the requested data 
+\end{DoxyReturn}
+\hypertarget{pumpif_8h_a9f139767eaac9783adad1cb42c2484aa}{\index{pumpif.\-h@{pumpif.\-h}!Chan2\-Buffer\-In@{Chan2\-Buffer\-In}}
+\index{Chan2\-Buffer\-In@{Chan2\-Buffer\-In}!pumpif.h@{pumpif.\-h}}
+\subsubsection[{Chan2\-Buffer\-In}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t Chan2\-Buffer\-In (
+\begin{DoxyParamCaption}
+\item[{uint16\-\_\-t}]{data}
+\end{DoxyParamCaption}
+)}}\label{pumpif_8h_a9f139767eaac9783adad1cb42c2484aa}
+
+
+Function to write into the overwriting Channel2 ringbuffer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em data} & the new value to store in the ringbuffer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+whether buffer write was successful or not 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em B\-U\-F\-F\-E\-R\-\_\-\-S\-U\-C\-C\-E\-S\-S} & \\
+\hline
+{\em B\-U\-F\-F\-E\-R\-\_\-\-F\-A\-I\-L} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{pumpif_8h_a7e8cad6b47f77b5e182aac5b1a5ba00f}{\index{pumpif.\-h@{pumpif.\-h}!Chan2\-Buffer\-Out@{Chan2\-Buffer\-Out}}
+\index{Chan2\-Buffer\-Out@{Chan2\-Buffer\-Out}!pumpif.h@{pumpif.\-h}}
+\subsubsection[{Chan2\-Buffer\-Out}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t Chan2\-Buffer\-Out (
+\begin{DoxyParamCaption}
+\item[{int8\-\_\-t}]{position}
+\end{DoxyParamCaption}
+)}}\label{pumpif_8h_a7e8cad6b47f77b5e182aac5b1a5ba00f}
+
+
+Function to read data from Channel2 ringbuffer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em buffer} & index to return, -\/7 to 0, more negative means older data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the requested data 
+\end{DoxyReturn}
+\hypertarget{pumpif_8h_adb94fbd930038e1510574dd4bcf07fe1}{\index{pumpif.\-h@{pumpif.\-h}!millis@{millis}}
+\index{millis@{millis}!pumpif.h@{pumpif.\-h}}
+\subsubsection[{millis}]{\setlength{\rightskip}{0pt plus 5cm}uint32\-\_\-t millis (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{pumpif_8h_adb94fbd930038e1510574dd4bcf07fe1}
+
+
+get milliseconds since system started, will overflow every $\sim$49 Days 
+
+\begin{DoxyReturn}{Returns}
+Milliseconds. 
+\end{DoxyReturn}
+\hypertarget{pumpif_8h_a0adc5599b4eaebf73d67f156970b290a}{\index{pumpif.\-h@{pumpif.\-h}!Mux\-Channel@{Mux\-Channel}}
+\index{Mux\-Channel@{Mux\-Channel}!pumpif.h@{pumpif.\-h}}
+\subsubsection[{Mux\-Channel}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t Mux\-Channel (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{channel}
+\end{DoxyParamCaption}
+)}}\label{pumpif_8h_a0adc5599b4eaebf73d67f156970b290a}
+
+
+Function to set or get the current A\-D\-C Mux Settings. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em channel} & the channel to switch the Muxer to or Q\-U\-E\-R\-Y to return the current setting \begin{DoxyItemize}
+\item A\-N\-A\-L\-O\-G1 \item A\-N\-A\-L\-O\-G2 \item B\-A\-N\-D\-G\-A\-P \item Q\-U\-E\-R\-Y \end{DoxyItemize}
+\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Current Muxer channel 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em A\-N\-A\-L\-O\-G1} & \\
+\hline
+{\em A\-N\-A\-L\-O\-G2} & \\
+\hline
+{\em B\-A\-N\-D\-G\-A\-P} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{pumpif_8h_a4e580b7a12652532049e4a036cf4c854}{\index{pumpif.\-h@{pumpif.\-h}!Process\-Data@{Process\-Data}}
+\index{Process\-Data@{Process\-Data}!pumpif.h@{pumpif.\-h}}
+\subsubsection[{Process\-Data}]{\setlength{\rightskip}{0pt plus 5cm}void Process\-Data (
+\begin{DoxyParamCaption}
+\item[{{\bf avgdata} $\ast$}]{p\-\_\-mydata}
+\end{DoxyParamCaption}
+)}}\label{pumpif_8h_a4e580b7a12652532049e4a036cf4c854}
+
+
+Function to calculate average values from the Buffer. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em p\-\_\-mydata} & Where to save the calculated average values \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\hypertarget{pumpif_8h_a348586d52f2ae6ba9d2429cf3320d5dc}{\index{pumpif.\-h@{pumpif.\-h}!state\-\_\-alarm@{state\-\_\-alarm}}
+\index{state\-\_\-alarm@{state\-\_\-alarm}!pumpif.h@{pumpif.\-h}}
+\subsubsection[{state\-\_\-alarm}]{\setlength{\rightskip}{0pt plus 5cm}void state\-\_\-alarm (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t $\ast$}]{stateflags}
+\end{DoxyParamCaption}
+)}}\label{pumpif_8h_a348586d52f2ae6ba9d2429cf3320d5dc}
+
+
+F\-S\-M state functions for state\-: Alarm. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em stateflags} & the stateflags \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\hypertarget{pumpif_8h_aaabb0e2cd92219396cbac5ca60c00821}{\index{pumpif.\-h@{pumpif.\-h}!state\-\_\-idle@{state\-\_\-idle}}
+\index{state\-\_\-idle@{state\-\_\-idle}!pumpif.h@{pumpif.\-h}}
+\subsubsection[{state\-\_\-idle}]{\setlength{\rightskip}{0pt plus 5cm}void state\-\_\-idle (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t $\ast$}]{stateflags}
+\end{DoxyParamCaption}
+)}}\label{pumpif_8h_aaabb0e2cd92219396cbac5ca60c00821}
+
+
+F\-S\-M state functions for state\-: Idle. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em stateflags} & the stateflags \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\hypertarget{pumpif_8h_a8a9adbbd4f3a62f6afadf99bc37b329f}{\index{pumpif.\-h@{pumpif.\-h}!state\-\_\-pumping@{state\-\_\-pumping}}
+\index{state\-\_\-pumping@{state\-\_\-pumping}!pumpif.h@{pumpif.\-h}}
+\subsubsection[{state\-\_\-pumping}]{\setlength{\rightskip}{0pt plus 5cm}void state\-\_\-pumping (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t $\ast$}]{stateflags}
+\end{DoxyParamCaption}
+)}}\label{pumpif_8h_a8a9adbbd4f3a62f6afadf99bc37b329f}
+
+
+F\-S\-M state functions for state\-: Pumping. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em stateflags} & the stateflags \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\hypertarget{pumpif_8h_af4f5d9ec58592e69b5ee3b144ffac3f3}{\index{pumpif.\-h@{pumpif.\-h}!state\-\_\-pwroff@{state\-\_\-pwroff}}
+\index{state\-\_\-pwroff@{state\-\_\-pwroff}!pumpif.h@{pumpif.\-h}}
+\subsubsection[{state\-\_\-pwroff}]{\setlength{\rightskip}{0pt plus 5cm}void state\-\_\-pwroff (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t $\ast$}]{stateflags}
+\end{DoxyParamCaption}
+)}}\label{pumpif_8h_af4f5d9ec58592e69b5ee3b144ffac3f3}
+
+
+F\-S\-M state functions for state\-: Poweroff. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em stateflags} & the stateflags \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\hypertarget{pumpif_8h_ae219b21feb33b121c92ada38b30e97e0}{\index{pumpif.\-h@{pumpif.\-h}!state\-\_\-training@{state\-\_\-training}}
+\index{state\-\_\-training@{state\-\_\-training}!pumpif.h@{pumpif.\-h}}
+\subsubsection[{state\-\_\-training}]{\setlength{\rightskip}{0pt plus 5cm}void state\-\_\-training (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t $\ast$}]{stateflags}
+\end{DoxyParamCaption}
+)}}\label{pumpif_8h_ae219b21feb33b121c92ada38b30e97e0}
+
+
+F\-S\-M state functions for state\-: Training. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em stateflags} & the stateflags \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+\subsection{Variable Documentation}
+\hypertarget{pumpif_8h_a417ccc71e42cbb10c77fe02634d70438}{\index{pumpif.\-h@{pumpif.\-h}!statehandler@{statehandler}}
+\index{statehandler@{statehandler}!pumpif.h@{pumpif.\-h}}
+\subsubsection[{statehandler}]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ statehandler)(uint8\-\_\-t $\ast$stateflags)}}\label{pumpif_8h_a417ccc71e42cbb10c77fe02634d70438}
+
+
+Callback function pointer to F\-S\-M state functions. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em stateflags} & the stateflags \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
