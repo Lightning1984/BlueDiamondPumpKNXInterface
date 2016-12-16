@@ -83,7 +83,10 @@ Introduction</h1>
 Detailed description</h1>
 <p>This hardware / software allows to directly integrate a Blue Diamond MicroBlue (Other Blue Diamond pumps might work as well, but untested) <br/>
  into a KNX bus for monitoring, alarming and power saving purposes! <br/>
- There are 2 independent relais outputs, one of them is internally fused (to be used for the pump), the second one can be used to turn of the AC unit in case of a pump issue. </p>
+ There are 2 independent relais outputs, one of them is internally fused (to be used for the pump), the second one can be used to turn off the AC unit in case of a pump issue. <br/>
+ The system is galvanically isolated between the Pump and the KNX bus using a RSO0505-D DCDC converter and optocouplers <br/>
+ Due to the design the system draws ~18mA from the Bus with both Relais switched on <br/>
+ This does not comply with the KNX max allowed consumption of 12mA, therefore be warned if your KNX Power supply is already close to its limits. </p>
 <h1><a class="anchor" id="credit_sec"></a>
 Credits</h1>
 <p>The System fits into a 2TE REG housing and is mostly built on a modified version of the Selfbus 2TE Controller with LPC922 and the "Kombi Aktor 2In 2Out fuer 2TE" <br/>
@@ -95,12 +98,14 @@ Credits</h1>
 <a href="https://github.com/selfbus/software/raw/master/2in2out/Releases/2in2out_1.0b.hex">https://github.com/selfbus/software/raw/master/2in2out/Releases/2in2out_1.0b.hex</a> </dd></dl>
 <h1><a class="anchor" id="download_sec"></a>
 Download</h1>
-<dl class="section see"><dt>See also:</dt><dd><a href="https://whereiam.home">https://whereiam.home</a> </dd></dl>
+<dl class="section see"><dt>See also:</dt><dd><a href="https://github.com/Lightning1984/BlueDiamondPumpKNXInterface">https://github.com/Lightning1984/BlueDiamondPumpKNXInterface</a> </dd>
+<dd>
+<a href="https://drive.google.com/drive/folders/0B65eQ9bjsU6ZTXUzSnhiRGNyeTA?usp=sharing">https://drive.google.com/drive/folders/0B65eQ9bjsU6ZTXUzSnhiRGNyeTA?usp=sharing</a> </dd></dl>
 <dl class="section copyright"><dt>Copyright:</dt><dd>(C) 2016 Rupert Dobrounig, Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International </dd></dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 16 2016 19:21:24 for BlueDiamondPumpInterface by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Dec 16 2016 20:34:37 for BlueDiamondPumpInterface by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.1.1
 </small></address>

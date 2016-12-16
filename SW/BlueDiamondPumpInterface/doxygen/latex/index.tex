@@ -2,7 +2,10 @@
 Blue Diamond Micro\-Blue Condensate Pump K\-N\-X Interface implemented as finite state machine \hypertarget{index_descript_sec}{}\section{Detailed description}\label{index_descript_sec}
 This hardware / software allows to directly integrate a Blue Diamond Micro\-Blue (Other Blue Diamond pumps might work as well, but untested) \par
  into a K\-N\-X bus for monitoring, alarming and power saving purposes! \par
- There are 2 independent relais outputs, one of them is internally fused (to be used for the pump), the second one can be used to turn of the A\-C unit in case of a pump issue. \hypertarget{index_credit_sec}{}\section{Credits}\label{index_credit_sec}
+ There are 2 independent relais outputs, one of them is internally fused (to be used for the pump), the second one can be used to turn off the A\-C unit in case of a pump issue. \par
+ The system is galvanically isolated between the Pump and the K\-N\-X bus using a R\-S\-O0505-\/\-D D\-C\-D\-C converter and optocouplers \par
+ Due to the design the system draws $\sim$18m\-A from the Bus with both Relais switched on \par
+ This does not comply with the K\-N\-X max allowed consumption of 12m\-A, therefore be warned if your K\-N\-X Power supply is already close to its limits. \hypertarget{index_credit_sec}{}\section{Credits}\label{index_credit_sec}
 The System fits into a 2\-T\-E R\-E\-G housing and is mostly built on a modified version of the Selfbus 2\-T\-E Controller with L\-P\-C922 and the \char`\"{}\-Kombi Aktor 2\-In 2\-Out fuer 2\-T\-E\char`\"{} \par
  as L\-P\-C922 firmware Version 1.\-0b can be used \begin{DoxySeeAlso}{See also}
 \href{http://selfbus.myxwiki.org/xwiki/bin/view/Technik/Controller_922_2TE}{\tt http\-://selfbus.\-myxwiki.\-org/xwiki/bin/view/\-Technik/\-Controller\-\_\-922\-\_\-2\-T\-E} 
@@ -13,7 +16,9 @@ The System fits into a 2\-T\-E R\-E\-G housing and is mostly built on a modified
 \end{DoxySeeAlso}
 \hypertarget{index_download_sec}{}\section{Download}\label{index_download_sec}
 \begin{DoxySeeAlso}{See also}
-\href{https://whereiam.home}{\tt https\-://whereiam.\-home} 
+\href{https://github.com/Lightning1984/BlueDiamondPumpKNXInterface}{\tt https\-://github.\-com/\-Lightning1984/\-Blue\-Diamond\-Pump\-K\-N\-X\-Interface} 
+
+\href{https://drive.google.com/drive/folders/0B65eQ9bjsU6ZTXUzSnhiRGNyeTA?usp=sharing}{\tt https\-://drive.\-google.\-com/drive/folders/0\-B65e\-Q9bjs\-U6\-Z\-T\-X\-Uz\-Snhi\-R\-G\-Nye\-T\-A?usp=sharing} 
 \end{DoxySeeAlso}
 \begin{DoxyCopyright}{Copyright}
 (C) 2016 Rupert Dobrounig, Creative Commons Attribution-\/\-Non\-Commercial-\/\-Share\-Alike 4.\-0 International 

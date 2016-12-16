@@ -13,7 +13,7 @@
  * \n into a KNX bus for monitoring, alarming and power saving purposes!
  * \n There are 2 independent relais outputs, one of them is internally fused (to be used for the pump), the second one can be used to turn off the AC unit in case of a pump issue.
  * \n The system is galvanically isolated between the Pump and the KNX bus using a RSO0505-D DCDC converter and optocouplers
- * \n Due to the design the system requires draws ~18mA from the Bus with both Relais switched on
+ * \n Due to the design the system draws ~18mA from the Bus with both Relais switched on
  * \n This does not comply with the KNX max allowed consumption of 12mA, therefore be warned if your KNX Power supply is already close to its limits.
  * @section credit_sec Credits
  * The System fits into a 2TE REG housing and is mostly built on a modified version of the Selfbus 2TE Controller with LPC922 and the "Kombi Aktor 2In 2Out fuer 2TE" 
@@ -22,7 +22,7 @@
  * @see http://selfbus.myxwiki.org/xwiki/bin/view/Ger%C3%A4te/Ausg%C3%A4nge/2in2out_2TE
  * @see https://github.com/selfbus/software/raw/master/2in2out/Releases/2in2out_1.0b.hex
  * @section download_sec Download
- * @see https://drive.google.com/drive/folders/0B65eQ9bjsU6ZTXUzSnhiRGNyeTA?usp=sharing
+ * @see https://github.com/Lightning1984/BlueDiamondPumpKNXInterface
  * @see https://drive.google.com/drive/folders/0B65eQ9bjsU6ZTXUzSnhiRGNyeTA?usp=sharing
  * @copyright (C) 2016 Rupert Dobrounig, Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
  * 
